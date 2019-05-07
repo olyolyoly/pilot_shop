@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.1/handlebars.min.js"></script>
+		<script id="product-template" type="text/x-handlebars-template">
+			<div class="product-container">
+				{{#if discount}}
+				<p class="reduction-sticker">{{discount}}</p>
+				{{/if}}
+				<p class="new-sticker">NEW</p>
+				<img src="{{image}}" alt="{{name}}" class="productimage">
+				<h5>{{name}}</h5>
+				<p>{{desc}}</p>
+				<p>From <span class="price">&dollar;{{price}}</span>
+					<span>&dollar;{{originalPrice}}</span></p>
+			</div>
+		</script>
+
+		<script id="threebox" type="text/x-handlebars-template">
+			<div class=" box {{class}}">
+				<h3>{{title}}</h3>
+				<p>{{subTitle}}</p>
+			</div>
+
+		</script>
+
+		<script defer src="script.js" type="application/javascript"></script>
+		<!-- LINKS -->
+		<meta charset="utf-8">
+			<link href="index.css" rel="stylesheet" type="text/css">
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+			<title>PILOT SHOP | PILOT SHOP</title>
+	</head>
+	
+	<body>
+		<div class="content">
+		
+		<!-- NAVBAR -->
+			<nav class="navbar">
+				<div class="width">	
+					<a class="phone">+800-2345-6789</a>
+					<a href="#" class="">My Account</a>
+					<a href="#" class="">Wishlist</a>
+					<a href="#" class="">Checkout</a>
+					<a href="#" class="usd">USD  &xvee;</a>
+					<a href="#" class="">Cart</a>
+					<a href="#" class="">Search Store</a>
+				</div>	
+			</nav>
+		
+		
+		<!-- MAIN HEAD -->
+			<header class="width">
+				<img class="logo"src="logo.png" alt="Pilot Shop Logo">
+				<div class="mainhead">
+					<a href="#" class="home">Home</a>
+					<p>Hot Deals</p>
+					<a href="#">Products</a>
+					<a href="#">Blog</a>
+					<a href="#">Sale</a>
+					<a href="#">About Us</a>
+					<a href="#">Contact Us</a>
+				</div>	
+			</header>	
+				
+		</div>
+	
+	
+		<!-- COVER IMAGE -->
+			<div class="coverimage">
+				<div class="middletext width">
+					<h1 class="title width">- A Wide Range -</h1>
+					<p class="width midtext1">Of Aviation Products and pilot supplies</p>
+					<p class=" midtextbox">Shop Now!</p>
+				</div>	
+			</div>	
+		
+		
+		<!-- OVERLAP BOXES -->
+		<div class="content width">
+				<div class="trio-box">
+				</div>	
+			
+			
+		<!-- PRODUCTS -->
+		
+		<p class="featprod">Featured Products</p>
+		
+		<div class="products"></div>
+	</div>
+		
+	</body>	
+
+</html>

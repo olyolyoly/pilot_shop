@@ -1,0 +1,453 @@
+$txtalign: center;
+
+@mixin text($size){
+  font-family: 'Ubuntu', sans-serif;
+  font-size: $size;
+  font-weight: bold;
+}
+
+
+/*GENERAL*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  @include text ();
+  text-transform: uppercase;
+  font-size: 62.5%;
+  letter-spacing: 1px;
+  text-align: $txtalign;
+  margin: 0 auto;
+}
+
+.width {
+  width: 1300px;
+  text-align: $txtalign;
+  margin: 0 auto;
+}
+
+.content {
+  @include text ();
+}
+
+
+/*NAVBAR*/
+
+nav {
+  font-size: 1.5em;
+  color: #DCDCDC;
+}
+
+nav a {
+  margin: 0px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: 	#778899;
+}
+
+.navbar {
+  background-color: #F4F4F4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 60px;
+  width: 100%;
+}
+
+.phone {
+  @include text ();
+  padding-right: 330px;
+}
+
+.usd {
+  border-left: solid 	#DCDCDC 1px;
+  border-right: solid #DCDCDC 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 22px;
+}
+
+
+/*ALL LINKS*/
+
+a {
+  text-decoration: none;
+}
+
+
+/*MAIN HEAD*/
+
+.logo {
+  margin-top: 25px;
+  margin-left: 10px;
+  float: left;
+}
+
+header {
+  height: 100px;
+}
+
+header a {
+  font-size: 1.5em;
+  color: black;
+  margin: 0 20px;
+}
+
+.mainhead {
+  padding-top: 40px;
+  float: right;
+}
+
+
+.home {
+  border: solid black 2px;
+  padding: 10px 15px;
+}
+
+
+/*STICKER*/
+
+.mainhead p {
+  background-color: red;
+  color: white;
+  padding: 3px 4px;
+  display: inline;
+  position: relative;
+  left: 130px;
+  bottom: 25px;
+}
+
+
+
+/*COVER IMAGE*/
+
+.coverimage {
+  background-image: url("background.jpg");
+  height: 800px;
+  color: white;
+}
+
+
+.middletext {
+  padding-top: 150px;
+
+}
+
+.title {
+  padding-top: 100px;
+  @include text(5rem);
+  letter-spacing: 15px;
+}
+
+.midtext1 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.midtextbox {
+  margin-top: 50px;
+  width: 150px;
+  border: solid #fff 1px;
+  padding: 15px;
+  font-size: 1.6em;
+  font-weight: bolder;
+  margin: 40px auto;
+}
+
+
+
+/*OVERLAP BOXES*/
+
+.trio-box {
+  margin-left: 25px;
+}
+
+.box {
+  color: #fff;
+  width: 30%;
+  height: 229px;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 6px;
+  padding-right: 15px;
+  padding-left: 40px;
+  float: left;
+  margin-right:25px;
+  margin-top: -180px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.box h3 {
+  font-size: 2.8rem;
+  padding-top: 30px;
+  margin: 0px;
+}
+
+.box p {
+  margin-top: 8px;
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+.box + .box + .box {
+  margin-right: 0px;
+}
+
+.headset {
+  background-image: url("headset.jpg");
+}
+
+.thebest {
+  background-image: url("onlythebest.jpg");
+}
+
+.gps {
+  background-image: url("gps.jpg");
+  margin-right: 0px;
+}
+
+.box .gps {
+  margin-right: 0px;
+}
+
+
+/*PRODUCTS*/
+
+.product-container .reduction-sticker {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 18px;
+  position: absolute;
+  left: 8px;
+  font-size: 10px;
+}
+
+.product-container .new-sticker{
+  display: inline-block;
+  background-color: #2d85b3;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 18px;
+  position: absolute;
+  right: 8px;
+  font-size: 8px;
+}
+
+.featprod {
+  font-size: 2em;
+  padding-top: 120px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.product-container {
+  width: 270px;
+  height: 400px;
+  float: left;
+  margin: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.productimage {
+  height: 270px;
+  width: 270px;
+  weight: 335px;
+  background-color: #F4F4F4;
+}
+
+.product-container h5 {
+  font-size: 14px;
+  @include text ();
+  margin-bottom: 5px;
+}
+
+.product-container p {
+  text-transform: none;
+  font-size: 12px;
+  margin: 8px;
+}
+
+.price {
+  color: #2d85b3;
+  font-size: 18px;
+  @include text ();                                                                                                        ;
+}
+
+span + span {
+  text-decoration: line-through;
+}
+
+
+/*MEDIA QUERIES */
+
+/*EXTRA LARGE*/
+@media (max-width:1300px) {
+  body {
+    font-size: 0.5rem;
+  }
+  .width {
+    width: 900px;
+  }
+  .phone {
+    padding-right: 180px;
+  }
+  nav a {
+    margin: 0px 10px;
+  }
+  header a {
+    margin: 0px 10px;
+  }
+  .box h3 {
+    font-size: 2rem;
+  }
+  .mainhead p {
+    display: none;
+  }
+  .coverimage {
+    height: 600px;
+  }
+  .middletext {
+    padding-top: 50px;
+  }
+  .box {
+    margin-top: -120px;
+    height: 190px;
+    padding-top: 10px;
+  }
+  .box p {
+    font-size: 1rem;
+  }
+  .featprod {
+    padding-top: 150px;
+    margin-bottom: 50px;
+  }
+}
+
+
+/*LARGE*/
+@media (max-width:992px) {
+  .width {
+    width: 750px;
+    margin: 0px auto;
+  }
+  .phone {
+    display: none;
+  }
+  .navbar {
+    padding-left: 90px;
+  }
+  .logo {
+    height: 30px;
+    margin-top: 30px;
+  }
+  .title {
+    font-size: 3.8rem;
+  }
+  .product-container {
+    width: 200px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
+  .productimage {
+    width: 100%;
+    height: 220px;
+  }
+  .box {
+    height: 170px;
+    padding-top: 5px;
+    padding-left: 30px;
+  }
+  .box h3 {
+    font-size: 1.8rem;
+  }
+  .box p {
+    font-size: 0.8rem;
+  }
+  .featprod {
+    padding-top: 100px;
+  }
+}
+
+
+/*MEDIUM*/
+@media (max-width:768px) {
+  body /*{
+		background-color: yellow;
+	}*/
+  .width {
+    width: 700px;
+  }
+  .box {
+    background-repeat: no-repeat;
+    width: 300px;
+  }
+
+  .box + .box + .box {
+    display: none;
+  }
+  .product-container {
+    width: 200px;
+    display: block;
+    margin: 0px auto;
+  }
+  .productimage {
+    float: none;
+    height: 200px;
+  }
+}
+
+
+
+
+@media (max-width: 576px){
+  .width {
+    width: 500px;
+  }
+  .box + .box {
+    display: none;
+  }
+  .box + .box + .box {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
